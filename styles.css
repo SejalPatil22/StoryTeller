@@ -1,0 +1,121 @@
+/* Import a bold, attention-grabbing web font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+
+/* Apply a full-screen jungle background with an overlay for better readability */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    color: #fff;
+}
+
+/* Container styles for the story pages */
+#story-container {
+    max-width: 1000px; /* Increase width to accommodate more content */
+    width: 100%;
+    padding: 30px; /* Increase padding for better spacing */
+    background: rgba(239, 6, 131, 0.557); /* Dark background with increased opacity for better contrast */
+    border-radius: 15px; /* Increased border-radius for a smoother look */
+    box-shadow: 0 0 25px rgba(108, 71, 71, 0.6); /* Increased shadow for a more prominent effect */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+#story-content {
+    font-size: 1.6em; /* Increased font size for better readability */
+    color: #023425; /* Bright yellow color for text */
+    margin-bottom: 30px; /* Increased margin to separate from choices */
+}
+
+#choices {
+    margin-top: 20px;
+}
+
+button {
+    display: flex;
+    width: 100%;
+    max-width: 350px; /* Increased button width for larger text */
+    padding: 20px; /* Increased padding for larger buttons */
+    margin: 10px 0; /* Increased margin for better spacing */
+    font-size: 1.5em; /* Increased font size for buttons */
+    border: none;
+    border-radius: 10px; /* Increased border-radius for buttons */
+    background-color: #0d62c4; /* Bright orange color for buttons */
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background-color: #073d7a; /* Darker orange for hover effect */
+    transform: scale(1.05);
+}
+
+button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+}
+
+/* Styles for centering content in different containers */
+.container1,
+.container2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Full viewport height */
+    width: 100%;
+}
+
+.container1 button,
+.container2 button {
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(186, 67, 87);
+    text-align: center;
+    width: auto; /* Adjust width to fit content */
+    color: rgb(39, 33, 33);
+}
+
+
+
+.container1 h1,
+.container2 h1{
+    text-transform: uppercase;
+    font-size: 35px;
+    font-weight: bolder;
+}
+
+.container1{
+    background-image: url(jungle.jpg);
+    background-size: 110%; /* Make the background bigger */
+    /* filter: blur(5px); Apply a slight blur effect */
+    
+}
+
+.container2{
+    background-image: url(bg2.jpg);
+    background-size: 105%; /* Make the background bigger */
+
+}
+
+.story-background{
+    background-image: url(background.jpg);
+}
+
+.container1 p,
+.container2 p{
+    font-size: 25px;
+    font-weight: bold;
+
+}
+
+.
